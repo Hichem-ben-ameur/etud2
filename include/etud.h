@@ -87,3 +87,9 @@ Etud* recherche(int num);
  * return int : la moyenne
  */
 float moyenne();
+
+/**
+ * modification de note
+ * return int : 0 si la modification est effectue sinon 1
+ */
+int modifie(int num, int Nnote);

@@ -62,7 +62,6 @@ FILE *f = fopen("../data/etudiants.txt", "a");
 if (f == NULL)
 {
     printf("Le fichier étudiants exite pas !\n");
-    //exit();
 }
 
 fprintf(f, "%s;%s;%d;%d \n",nom,prenom,note,numeroEtud);
@@ -169,7 +168,14 @@ void print_list(){
 
 }
 
-/*int modifie(int num, int Nnote){
+/**
+ *\fn modifie
+ * \brief fonction modification de note
+ * \param 1 : int
+ * \param 2 : int
+ * return int : 0 si la modification est effectue sinon 1
+ */
+int modifie(int num, int Nnote){
   Etud *cur, *cur1;
 	cur1 = cur;
 	cur = pEtud;
@@ -185,4 +191,3 @@ void print_list(){
   cur->note= Nnote;
 	return 0;
 }
-*/
