@@ -125,7 +125,7 @@ Etud* recherche(int num){
 float moyenne(){
    int i=0;
    float sum=0;
-    Etud *etud = pEtud->next;
+   Etud *etud = pEtud->next;
   while(etud->next){
  
 

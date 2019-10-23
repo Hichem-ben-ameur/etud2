@@ -1,8 +1,8 @@
 
-compiler calc: 
+compiler GestionEtudiant: 
 	cd src 
 	gcc -I ..\include\  main.c etud.c appli.c  -o GestionEtudiant 
 
 
-lancer calc : 
+lancer GestionEtudiant : 
 	./GestionEtudiant

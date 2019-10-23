@@ -38,7 +38,7 @@ int main (int argc, char* argv[]){
     printf(" === Scola === \n");
     print_menu();
     scanf("%c", &choix);
- /*   switch (choix){
+    switch (choix){
     case '1':
         print_list();
         print_menu();
@@ -70,16 +70,16 @@ int main (int argc, char* argv[]){
         printf("merci de saisir un chiffre entre 1 et 4 \n");
         print_menu();
     }
-*/
-    add_etud("houssein","hamadi",100,23);
+
+    /*add_etud("houssein","hamadi",100,23);
     add_etud("hicham","hicham",200,2233);
-    float sum=moyenne();
+    //float sum=moyenne();
     printf("%d \n",sum);
    // recherche(23);
     //supp_etud(23);
     //print_list();
 
-
+*/
     
     return 0; 
 }
