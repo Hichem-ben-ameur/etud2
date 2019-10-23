@@ -190,3 +190,34 @@ int modifie(int num, int Nnote){
   cur->note= Nnote;
 	return 0;
 }
+
+
+/**
+ *\brief lire la list des etudiant du fichier
+*/
+void lire_fichier(){
+	FILE* fichier = fopen("../data/etudiants.txt", "r+");
+	char line[SIZE_MAX], *token, *nom, *prenom;
+	int num;
+	float note;
+		while(fgets(line, SIZE_MAX, fichier) != NULL){
+			Etud* etud = malloc(sizeof *etud);
+			token = strtok(line, ";");
+			nom = token;
+
+			token = strtok(NULL, ";");
+			prenom = token;
+
+			token = strtok(NULL, ";");
+			num = atoi(token);
+
+			token = strtok(NULL, ";");
+			note = strtod(token, NULL);
+
+			add_etud(nom, prenom, note, num);
+		}
+    fclose();
+    }
+   
+
+}

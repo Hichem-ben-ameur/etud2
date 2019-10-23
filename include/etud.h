@@ -93,3 +93,6 @@ float moyenne();
  * return int : 0 si la modification est effectue sinon 1
  */
 int modifie(int num, int Nnote);
+
+
+void lire_fichier(char* fileName);
