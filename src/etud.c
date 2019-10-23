@@ -161,8 +161,7 @@ void print_list(){
   printf(" Liste des etudiants \n ");
   Etud *etud = pEtud->next;
   while(etud->next){
-    printf("dd");
-    printf("%s \n",etud->prenom);
+    printf("Nom : %s \n Prenom : %s \n Num: %d \n Note: %d \n",etud->nom,etud->prenom,etud->num,etud->note);
     etud= etud->next;
   }
 
