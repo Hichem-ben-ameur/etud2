@@ -72,9 +72,9 @@ int main (int argc, char* argv[]){
     }
 
     /*add_etud("houssein","hamadi",100,23);
-    add_etud("hicham","hicham",200,2233);
+    add_etud("hicham","hicham",200,2233);*/
     //float sum=moyenne();
-    printf("%d \n",sum);
+    //printf("%d \n",sum);
    // recherche(23);
     //supp_etud(23);
     //print_list();

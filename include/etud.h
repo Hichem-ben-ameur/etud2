@@ -95,4 +95,7 @@ float moyenne();
 int modifie(int num, int Nnote);
 
 
-void lire_fichier(char* fileName);
+/**
+ * lire les etudiant du fichier
+ */
+void lire_fichier();

@@ -197,10 +197,10 @@ int modifie(int num, int Nnote){
 */
 void lire_fichier(){
 	FILE* fichier = fopen("../data/etudiants.txt", "r+");
-	char line[SIZE_MAX], *token, *nom, *prenom;
+	char line[100], *token, *nom, *prenom;
 	int num;
 	float note;
-		while(fgets(line, SIZE_MAX, fichier) != NULL){
+		while(fgets(line, 100, fichier) != NULL){
 			Etud* etud = malloc(sizeof *etud);
 			token = strtok(line, ";");
 			nom = token;
@@ -216,8 +216,7 @@ void lire_fichier(){
 
 			add_etud(nom, prenom, note, num);
 		}
-    fclose();
+    
     }
    
 
-}
