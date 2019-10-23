@@ -1,0 +1,13 @@
+
+
+typedef struct etud
+{
+  unsigned int num;
+  char[50]     nom;
+  char[50]     prenom;
+  float        note;
+  Etud* next;
+  Etud* prev;
+}Etud;
+
+
